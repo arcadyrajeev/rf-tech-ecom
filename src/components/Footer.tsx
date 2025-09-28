@@ -2,7 +2,13 @@
 import Link from "next/link";
 
 import Image from "next/image";
-import { Facebook, Youtube, Instagram, Linkedin, Twitter } from "lucide-react";
+
+const socials = [
+  { label: "Instagram", image: "/icons/insta2.png", link: "#" },
+  { label: "Facebook", image: "/icons/facebook.png", link: "#" },
+  { label: "Twitter", image: "/icons/twitter.png", link: "#" },
+  { label: "LinkedIn", image: "/icons/linkedIn.png", link: "#" },
+];
 
 // Footer link data
 const categories = [
@@ -101,28 +107,20 @@ export default function Footer() {
         </div>
       </div>
 
+      <div className="flex w-full p-4 justify-center items-center gap-8">
+        {socials.map((icon, idx) => (
+          <Link href={icon.link} key={idx}>
+            <Image src={icon.image} alt={icon.label} height={30} width={30} />{" "}
+          </Link>
+        ))}
+      </div>
+
       {/* Bottom Bar */}
       <div className="border-t border-white/20 mt-6">
         <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center text-sm text-white/80">
           <p>©2025 RFTech Private Limited. All rights reserved</p>
           {/* Social Icons */}
-          <div className="flex gap-5 mt-4 md:mt-0">
-            <Link href="https://facebook.com" target="_blank">
-              <Facebook className="w-5 h-5 hover:text-black cursor-pointer" />
-            </Link>
-            <Link href="https://youtube.com" target="_blank">
-              <Youtube className="w-5 h-5 hover:text-black cursor-pointer" />
-            </Link>
-            <Link href="https://instagram.com" target="_blank">
-              <Instagram className="w-5 h-5 hover:text-black cursor-pointer" />
-            </Link>
-            <Link href="https://linkedin.com" target="_blank">
-              <Linkedin className="w-5 h-5 hover:text-black cursor-pointer" />
-            </Link>
-            <Link href="https://twitter.com" target="_blank">
-              <Twitter className="w-5 h-5 hover:text-black cursor-pointer" />
-            </Link>
-          </div>
+          <div className="flex text-gray-100">Made by Arcady Designs</div>
         </div>
       </div>
     </footer>

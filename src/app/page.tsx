@@ -10,7 +10,6 @@ import BlogPostSection from "@/components/BlogPostSection";
 import { blogCardData } from "@/lib/typesIntefaces";
 
 import data from "@/data/homeBlogs.json";
-import Marquee from "@/components/MarqueeSection";
 
 const blogPosts: blogCardData[] = data;
 
@@ -23,7 +22,6 @@ const Home = () => {
       <BestSellers />
       <MarketingSection />
       <BlogPostSection title="Recent Blog Posts" blogPosts={blogPosts} />
-      <Marquee />
     </div>
   );
 };

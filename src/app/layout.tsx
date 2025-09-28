@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 import SmoothScrollProvider from "@/utils/SmoothScrollProvider";
 import Footer from "../components/Footer";
+import Marquee from "@/components/MarqueeSection";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,6 +34,7 @@ export default function RootLayout({
         <SmoothScrollProvider>
           <Navbar />
           <main>{children}</main>
+          <Marquee />
           <Footer />
         </SmoothScrollProvider>
       </body>

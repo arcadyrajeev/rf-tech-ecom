@@ -7,33 +7,43 @@ interface ProductCardProps {
 
 export default function ProductCard({ product }: ProductCardProps) {
   return (
-    <div className="min-w-[20vw] max-w-[20vw] h-[40vw] bg-gray-50 rounded-lg shadow hover:shadow-lg transition  flex flex-col">
+    <div className="flex flex-col cursor-pointer bg-gray-50 rounded-lg border hover:shadow-lg transition w-full max-w-sm md:max-w-md">
       {/* Product Image */}
-      <div className="h-[20vw] border border-gray-200 rounded-lg w-full relative overflow-hidden flex justify-center items-center">
+      <div className="relative w-full h-56 md:h-72 lg:h-80 overflow-hidden rounded-t-lg flex justify-center items-center">
         <Image
           src={product.imageUrl}
           alt={product.title}
           fill
-          className="object-cover w-full h-full absolute"
+          className="object-cover"
         />
       </div>
 
       {/* Product Info */}
-      <div className="flex  flex-col px-[1vw] ">
-        {" "}
-        <h3 className="mt-4 text-[1.4vw] text-black">{product.title}</h3>
-        <p className="text-md md:text-[1.2vw] text-gray-700 mt-2">
+      <div className="flex flex-col px-4 py-3 flex-grow">
+        <h3 className="mt-2 text-lg md:text-xl font-medium text-black">
+          {product.title}
+        </h3>
+        <p className="text-sm md:text-base text-gray-700 mt-2 line-clamp-2">
           {product.description}
         </p>
       </div>
+
       {/* Actions */}
-      <div className="mt-auto flex flex-col gap-2  p-3">
+      <div className="mt-auto flex flex-col gap-2 p-4 border-t">
         {/* Pricing */}
-        <div className="mt-3">
-          <p className="text-gray-400 line-through">${product.oldPrice}</p>
-          <p className="text-lg md:text-[2vw] font-semibold text-gray-800">
+        <div>
+          {product.oldPrice && (
+            <p className="text-gray-400 line-through text-sm">
+              ${product.oldPrice}
+            </p>
+          )}
+          <p className="text-lg md:text-xl font-semibold text-gray-800">
             ${product.price}{" "}
-            <span className="text-green-600 text-sm">{product.discount}</span>
+            {product.discount && (
+              <span className="text-green-600 text-sm ml-1">
+                {product.discount}
+              </span>
+            )}
           </p>
         </div>
       </div>

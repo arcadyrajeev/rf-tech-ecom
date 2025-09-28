@@ -11,13 +11,13 @@ const categories = [
     name: "Retail & Store Accessories",
     image: "/images/categories/retail.png",
   },
-  { name: "Software & Services", image: "/images/categories/software.png" },
+  { name: "Handheld Computers", image: "/images/categories/handheld.png" },
   { name: "Bundles & Kits", image: "/images/categories/bundle.png" },
 ];
 
 export default function ProductCategories() {
   return (
-    <section className="w-full py-60 md:py-[8vw] bg-white">
+    <section className="w-full py-26 md:py-[6vw] lg:py-[8vw] bg-white">
       <div className="max-w-7xl mx-auto px-6">
         {/* Title */}
         <h2 className="text-3xl text-black md:text-[4vw] font-medium text-center mb-12">
@@ -25,13 +25,13 @@ export default function ProductCategories() {
         </h2>
 
         {/* Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
           {categories.map((cat, idx) => (
             <div
               key={idx}
               className="flex  flex-col py-2 items-center  rounded-lg border border-gray-200 shadow-sm hover:shadow-lg transition cursor-pointer"
             >
-              <div className="w-[20vw] rounded-lg h-[20vw] relative overflow-hidden">
+              <div className="lg:w-[20vw] rounded-lg w-full h-40 lg:h-[20vw] relative overflow-hidden">
                 <Image
                   src={cat.image}
                   alt={cat.name}
@@ -39,7 +39,7 @@ export default function ProductCategories() {
                   className="object-cover w-full h-full"
                 />
               </div>
-              <p className="mt-4 text-center font-medium text-gray-700">
+              <p className="mt-4 text-center text-xl lg:text-[1.4vw] font-medium text-gray-700">
                 {cat.name}
               </p>
             </div>

@@ -34,10 +34,10 @@ const support = [
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-gradient-to-r from-teal-700 to-cyan-600 text-white">
-      <div className="w-full flex justify-between mx-auto px-6 py-12 gap-12">
+    <footer className="w-full bg-gradient-to-r from-teal-700 to-cyan-600 text-white pt-12">
+      <div className="w-full flex flex-col lg:flex-row justify-between mx-auto px-6 py-12 gap-12">
         {/* Logo + Newsletter */}
-        <div className="w-[30%] flex flex-col">
+        <div className="w-full lg:w-[30%] flex flex-col">
           <Link href="/" className="text-2xl font-bold text-blue-400">
             <Image
               src="/images/RFTech.svg"
@@ -49,19 +49,19 @@ export default function Footer() {
           <p className="mb-4 mt-[3vw]">Get our latest offers right to you</p>
 
           {/* Subscribe Box */}
-          <div className="flex w-full border border-white max-w-sm ">
+          <div className="grid grid-cols-3  w-full border border-white  ">
             <input
               type="email"
               placeholder="Email here"
-              className="flex-1 px-4 py-2 rounded-l border-none text-gray-200"
+              className="flex col-span-2 px-4 py-2 rounded-l border-none text-gray-200"
             />
-            <button className="bg-black text-white px-4 py-2 font-semibold rounded-r hover:bg-gray-800">
+            <button className="flex justify-self-end  bg-black  items-center justify-center text-white px-4 py-2 font-semibold rounded-r hover:bg-gray-800">
               SUBSCRIBE
             </button>
           </div>
         </div>
 
-        <div className="flex w-[60%] gap-30">
+        <div className="flex flex-col md:flex-row  w-full lg:w-[60%] gap-30">
           {/* Categories */}
           <div>
             <h3 className="font-semibold mb-4 text-gray-300">Categories</h3>

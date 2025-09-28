@@ -1,0 +1,23 @@
+[
+  {
+    "imageUrl": "/images/blog/blog1.jpg",
+    "date": "02 July, 2025",
+    "title": "5 Must-Have Devices to Modernize Your Retail Store",
+    "description": "From POS systems to barcode scanners, discover the essential tools every business needs to run faster and smarter.",
+    "link": "#"
+  },
+  {
+    "imageUrl": "/images/blog/blog2.jpg",
+    "date": "15 Aug, 2025",
+    "title": "How to Choose the Right POS System for Your Business",
+    "description": "Not all POS machines are built the same. Learn what features to look for—so you invest once and scale for years.",
+    "link": "#"
+  },
+  {
+    "imageUrl": "/images/blog/blog3.jpg",
+    "date": "12 Sep, 2025",
+    "title": "The Future of Payments: NFC, UPI & Beyond",
+    "description": "Stay ahead of customer expectations with the latest payment technologies powering secure and frictionless checkouts.",
+    "link": "#"
+  }
+]

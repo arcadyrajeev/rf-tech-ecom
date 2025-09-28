@@ -59,8 +59,8 @@ export default function Navbar() {
 
   return (
     <header
-      className={`w-full overflow-hidden flex flex-col bg-gray-800 fixed top-0 z-99 transition-[height] duration-300 ease-in-out ${
-        isCategoriesOpen ? "h-60" : "h-16"
+      className={`w-full  overflow-hidden flex flex-col bg-gray-800 fixed top-0 z-99 transition-[height] duration-300 ease-in-out ${
+        isCategoriesOpen ? "lg:h-60" : "h-10 lg:h-14 xl:h-16"
       }`}
     >
       <nav className="w-full  bg-black text-white border-b border-cyan-500 mx-auto flex items-center justify-between px-6 py-2">

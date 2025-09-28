@@ -4,11 +4,12 @@ import Image from "next/image";
 
 export default function Marquee() {
   const logos = [
-    "/images/RFTech.svg",
-    "/images/RFTech.svg",
-    "/images/RFTech.svg",
-    "/images/RFTech.svg",
-    "/images/RFTech.svg",
+    "/rf5.svg",
+    "/rf5.svg",
+    "/rf5.svg",
+    "/rf5.svg",
+    "/rf5.svg",
+    "/rf5.svg",
   ];
 
   return (

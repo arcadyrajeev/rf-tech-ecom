@@ -67,12 +67,7 @@ export default function Navbar() {
         {/* Logo */}
         <div className="flex gap-10 items-center">
           <Link href="/" className="text-2xl font-bold text-cyan-400">
-            <Image
-              src="/images/RFTech.svg"
-              alt="RF-Tech Logo"
-              height={40}
-              width={120}
-            />
+            <Image src="/rf5.svg" alt="RF-Tech Logo" height={40} width={120} />
           </Link>
 
           <div className="w-[16vw] hidden h-full lg:flex flex-col">

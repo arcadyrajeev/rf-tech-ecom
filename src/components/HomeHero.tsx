@@ -4,7 +4,7 @@ import { ChevronsDown } from "lucide-react";
 
 export default function HomeHero() {
   return (
-    <section className="w-full h-[100dvh] bg-black text-white relative overflow-hidden">
+    <section className="w-full h-[100vh] bg-black text-white relative overflow-hidden">
       <div className="w-full h-full flex flex-col relative p-10 py-14 md:py-20 md:px-[6vw] md:py-20 gap-10">
         <div className="relative z-5 flex flex-col mt-8 items-start w-full h-full pt-[4vw]">
           <h1 className="text-[160%] md:text-[4vw]  leading-tighter">

@@ -82,7 +82,7 @@ export default function Navbar() {
         </div>
 
         {/* Links */}
-        <ul className="hidden lg:flex items-center gap-8 ">
+        <ul className="hidden lg:flex items-center gap-8 text-[1vw] font-medium ">
           <li>
             <Link href="/" className="hover:text-cyan-400 cursor-pointer">
               HOME

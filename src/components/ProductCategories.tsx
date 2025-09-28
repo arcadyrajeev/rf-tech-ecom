@@ -29,7 +29,7 @@ export default function ProductCategories() {
           {categories.map((cat, idx) => (
             <div
               key={idx}
-              className="flex  flex-col py-2 items-center  rounded-lg border border-gray-200 shadow-sm hover:shadow-lg transition cursor-pointer"
+              className="flex  flex-col py-2 items-center  rounded-lg bg-gray-100 hover:shadow-lg transition cursor-pointer"
             >
               <div className="lg:w-[20vw] rounded-lg w-full h-40 lg:h-[20vw] relative overflow-hidden">
                 <Image

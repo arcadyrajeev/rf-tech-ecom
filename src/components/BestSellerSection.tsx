@@ -22,25 +22,27 @@ export default function BestSellers() {
   return (
     <section className="w-full py-20 md:py-[8vw] bg-white relative">
       <div className="w-full flex flex-col px-6">
-        {/* Title */}
-        <h2 className="text-3xl text-black md:text-[3vw] font-medium text-center mb-10">
-          OUR BEST SELLERS
-        </h2>
-
-        {/* Scroll buttons */}
-        <button
-          onClick={() => scroll("left")}
-          className="hidden md:flex absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white border rounded-full shadow p-2 hover:bg-gray-100"
-        >
-          <ChevronLeft className="w-6 h-6 text-gray-700" />
-        </button>
-
-        <button
-          onClick={() => scroll("right")}
-          className="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white border rounded-full shadow p-2 hover:bg-gray-100"
-        >
-          <ChevronRight className="w-6 h-6 text-gray-700" />
-        </button>
+        <div className="flex justify-between h-12 px-20">
+          {" "}
+          {/* Scroll buttons left*/}
+          <button
+            onClick={() => scroll("left")}
+            className="hidden items-center justify-center cursor-pointer  md:flex z-10 bg-white border rounded-full shadow p-2 hover:bg-gray-100"
+          >
+            <ChevronLeft className="w-6 h-6 text-gray-700" />
+          </button>
+          {/* Title */}
+          <h2 className="text-3xl text-black md:text-[3vw] font-medium text-center mb-10">
+            OUR BEST SELLERS
+          </h2>
+          {/* Scroll buttons right*/}
+          <button
+            onClick={() => scroll("right")}
+            className="hidden items-center justify-center cursor-pointer md:flex  z-10 bg-white border rounded-full shadow p-2 hover:bg-gray-100"
+          >
+            <ChevronRight className="w-6 h-6 text-gray-700" />
+          </button>
+        </div>
 
         {/* Horizontal scrollable product cards */}
         <div

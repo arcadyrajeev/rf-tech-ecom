@@ -20,9 +20,9 @@ export default function BestSellers() {
   };
 
   return (
-    <section className="w-full py-20 md:py-[8vw] bg-white relative">
-      <div className="w-full flex flex-col px-6">
-        <div className="flex justify-between h-12 px-20">
+    <section className="w-full py-14 md:py-[8vw] bg-white relative">
+      <div className="w-full flex flex-col items-center px-6">
+        <div className="flex justify-between h-12 md:px-20">
           {" "}
           {/* Scroll buttons left*/}
           <button
@@ -32,7 +32,7 @@ export default function BestSellers() {
             <ChevronLeft className="w-6 h-6 text-gray-700" />
           </button>
           {/* Title */}
-          <h2 className="text-3xl text-black md:text-[3vw] font-medium text-center mb-10">
+          <h2 className="text-2xl md:text-3xl text-black lg:text-[3vw] font-medium text-center mb-10">
             OUR BEST SELLERS
           </h2>
           {/* Scroll buttons right*/}
@@ -47,7 +47,7 @@ export default function BestSellers() {
         {/* Horizontal scrollable product cards */}
         <div
           ref={scrollRef}
-          className="flex overflow-x-auto gap-6 pb-4 scrollbar-hide scroll-smooth"
+          className=" flex w-full mt-6 overflow-x-auto gap-6 pb-4 scrollbar-hide scroll-smooth"
         >
           {products.map((product, idx) => (
             <div

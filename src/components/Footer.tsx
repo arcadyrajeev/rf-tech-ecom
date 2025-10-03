@@ -41,11 +41,11 @@ const support = [
 export default function Footer() {
   return (
     <footer className="w-full bg-gradient-to-r from-teal-700 to-cyan-600 text-white pt-12">
-      <div className="w-full flex flex-col lg:flex-row justify-between mx-auto px-6 py-12 gap-12">
+      <div className="w-full flex flex-col lg:flex-row justify-between mx-auto px-6 py-12 gap-10 xl:gap-12">
         {/* Logo + Newsletter */}
-        <div className="w-full lg:w-[30%] flex flex-col">
+        <div className="w-full lg:w-[36%] xl:w-[30%] flex flex-col ">
           <Link href="/" className="text-2xl font-bold text-blue-400">
-            <Image src="/rf5.svg" alt="RF-Tech Logo" height={50} width={150} />
+            <Image src="/rf5.svg" alt="RF-Tech Logo" height={50} width={300} />
           </Link>
           <p className="mb-4 mt-[3vw]">Get our latest offers right to you</p>
 
@@ -62,7 +62,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row  w-full lg:w-[60%] gap-30">
+        <div className="flex flex-col md:flex-row  w-full lg:w-[60%] gap-14 xl:gap-30">
           {/* Categories */}
           <div>
             <h3 className="font-semibold mb-4 text-gray-300">Categories</h3>

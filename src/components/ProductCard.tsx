@@ -9,7 +9,7 @@ export default function ProductCard({ product }: ProductCardProps) {
   return (
     <div className="flex flex-col cursor-pointer bg-gray-100 rounded-lg  hover:shadow-lg transition w-full max-w-sm md:max-w-md">
       {/* Product Image */}
-      <div className="relative w-full h-56 md:h-72 lg:h-80 overflow-hidden rounded-t-lg flex justify-center items-center">
+      <div className="relative w-full h-72 lg:h-80 overflow-hidden rounded-t-lg flex justify-center items-center">
         <Image
           src={product.imageUrl}
           alt={product.title}

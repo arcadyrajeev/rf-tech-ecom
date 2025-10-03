@@ -45,7 +45,12 @@ export default function Footer() {
         {/* Logo + Newsletter */}
         <div className="w-full lg:w-[36%] xl:w-[30%] flex flex-col ">
           <Link href="/" className="text-2xl font-bold text-blue-400">
-            <Image src="/rf5.svg" alt="RF-Tech Logo" height={50} width={300} />
+            <Image
+              src="/rfwhite.svg"
+              alt="RF-Tech Logo"
+              height={50}
+              width={300}
+            />
           </Link>
           <p className="mb-4 mt-[3vw]">Get our latest offers right to you</p>
 

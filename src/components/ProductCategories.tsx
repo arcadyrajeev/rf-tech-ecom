@@ -31,7 +31,7 @@ export default function ProductCategories() {
               key={idx}
               className="flex  flex-col  items-center  rounded-lg bg-gray-100 hover:shadow-lg transition cursor-pointer"
             >
-              <div className="lg:w-[20vw] rounded-lg w-full h-40 lg:h-[20vw] relative overflow-hidden">
+              <div className="lg:w-[20vw] rounded-lg w-full h-48 lg:h-[20vw] relative overflow-hidden">
                 <Image
                   src={cat.image}
                   alt={cat.name}

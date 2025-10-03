@@ -11,7 +11,7 @@ export default function HomeHero() {
             SMART <span className="text-cyan-400">DEVICES</span> FOR SMARTER
             COMMERCE
           </h1>
-          <p className="text-gray-100 text-xl text-justify xl:text-[1.2rem] w-full md:w-[55%] lg:w-full xl:w-[50%] mt-60 md:mt-[3vw] leading-tight">
+          <p className="text-gray-100 text-xl text-justify xl:text-[1.2rem] w-full md:w-[55%] lg:w-full xl:w-[50%] mt-75 md:mt-[3vw] leading-tight">
             From POS systems to barcode scanners, discover the latest finance
             and retail solutions. All in one trusted marketplace.
           </p>

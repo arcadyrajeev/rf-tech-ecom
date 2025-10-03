@@ -11,13 +11,13 @@ export default function HomeHero() {
             SMART <span className="text-cyan-400">DEVICES</span> FOR SMARTER
             COMMERCE
           </h1>
-          <p className="text-gray-100 text-xl text-justify xl:text-[1.2rem] w-full md:w-[55%] lg:w-full xl:w-[50%] mt-75 md:mt-[3vw] leading-tight">
+          <p className="text-gray-100 text-xl text-justify xl:text-[1.2rem] w-full md:w-[55%] lg:w-full xl:w-[50%] mt-[3vw] leading-tight">
             From POS systems to barcode scanners, discover the latest finance
             and retail solutions. All in one trusted marketplace.
           </p>
 
           {/* CTA Button */}
-          <button className="flex mt-10 md:mt-[50vh] xl:mt-auto items-center cursor-pointer gap-3 bg-cyan-700 hover:bg-cyan-600 text-white font-semibold text-md md:text-[2rem] xl:text-[1.2vw] px-6 py-3 rounded-full transition">
+          <button className="flex mt-auto items-center cursor-pointer gap-3 bg-cyan-700 hover:bg-cyan-600 text-white font-semibold text-md md:text-[2rem] xl:text-[1.2vw] px-6 py-3 rounded-full transition">
             DOWNLOAD BROCHURE
             <ChevronsDown size={30} />
           </button>

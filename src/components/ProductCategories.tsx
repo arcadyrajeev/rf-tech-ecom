@@ -7,11 +7,11 @@ const categories = [
   { name: "Barcode/ QR Scanners", image: "/images/categories/scanner.jpg" },
   { name: "Receipt & Label Printers", image: "/images/categories/printer.png" },
   { name: "Cash Handling Devices", image: "/images/categories/cash.png" },
+  { name: "Handheld Computers", image: "/images/categories/handheld.png" },
   {
     name: "Retail & Store Accessories",
     image: "/images/categories/retail.png",
   },
-  { name: "Handheld Computers", image: "/images/categories/handheld.png" },
   { name: "Bundles & Kits", image: "/images/categories/bundle.png" },
 ];
 
@@ -29,9 +29,9 @@ export default function ProductCategories() {
           {categories.map((cat, idx) => (
             <div
               key={idx}
-              className="flex  flex-col  items-center  rounded-lg bg-gray-100 hover:shadow-lg transition cursor-pointer"
+              className="flex  flex-col  items-center h-68 xl:h-84 rounded-lg bg-gray-100 hover:shadow-lg transition cursor-pointer"
             >
-              <div className="lg:w-[20vw] rounded-lg w-full h-48 lg:h-[20vw] relative overflow-hidden">
+              <div className=" rounded-lg w-full h-48 xl:h-[20vw] relative overflow-hidden">
                 <Image
                   src={cat.image}
                   alt={cat.name}
@@ -39,7 +39,7 @@ export default function ProductCategories() {
                   className="object-cover w-full h-full"
                 />
               </div>
-              <p className="my-4 text-center text-md md:text-xl  lg:text-[1.4vw] font-medium text-gray-700">
+              <p className="my-4 px-3 text-center text-md md:text-xl  xl:text-[1.4vw] font-medium text-gray-700">
                 {cat.name}
               </p>
             </div>
